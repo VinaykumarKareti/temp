@@ -472,11 +472,6 @@ app.post('/deletematchforms', async (req, res) => {
   }
 });
 
- 
-
-
-
-
 app.post('/deletematch', async (req, res) => {
   try {
     const deleteMatches = req.body.deleteMatch;
