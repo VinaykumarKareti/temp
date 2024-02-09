@@ -417,7 +417,7 @@ app.post('/deletematchforms', async (req, res) => {
 
     if (i !== -1) {
       console.log('Index of the first non-empty string:', i);
-      const [sport, match] = deleteMatches.split(':');
+      const [sport, match] = deleteMatches[i].split(':');
       console.log("sport", sport, match);
 
       const matchRecord = await matches.findOne({
@@ -492,7 +492,7 @@ app.post('/deletematch', async (req, res) => {
 
     if (i !== -1) {
       console.log('Index of the first non-empty string:', i);
-      const [sport, match] = deleteMatches[i].split(':');
+      const [sport, match] = deleteMatches.split(':');
       console.log("sport", sport, match);
 
       const matchRecord = await matches.findOne({

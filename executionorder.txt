@@ -12,3 +12,5 @@ npx sequelize-cli model:generate --name session --attributes sport:string,match:
 
 npx sequelize-cli model:generate --name matches --attributes sport:string,admin:string,match:string,date:dateonly,teamsize:integer,venue:string,timein:string,timeout:string,reason:string
 
+npx sequelize-cli model:generate --name admin --attributes first:string,last:string,email:string,password:string
+npx sequelize-cli model:generate --name player --attributes first:string,last:string,email:dateonly,password:string,fullname:string
