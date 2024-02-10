@@ -1,5 +1,5 @@
 <!-- views/index.ejs -->
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +13,195 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Todo Home Page -->
+    
     <div class="grid grid-cols-6">
         <div class="col-start-3 col-span-2">
             <p class="py-2">Welcome to Sports Scheduler</p>
             <p class="py-2">New Here?<a class="text-green-600" href="/signup">Sign-Up now...</a></p>
             <p class="py-2">Already have an Account?<a class="text-green-600" href="/login">Sign-In</a></p>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!-- views/index.ejs -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .col-start-3 {
+            grid-column: 3;
+        }
+
+        .col-span-2 {
+            grid-column: span 2;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            color: #2980b9;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="col-start-3 col-span-2">
+                <div class="card">
+                    <p class="title">Welcome to Sports Scheduler</p>
+                    <p class="subtitle">New Here? <a class="link" href="/signup">Sign-Up now...</a></p>
+                    <p class="subtitle">Already have an Account? <a class="link" href="/login">Sign-In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body {
+            background-color: #f2fce0;
+            color: #2c3e50;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: linear-gradient(to right, #92e7fc, #a7fc9d);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            color: #c0392b;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Todo Home Page -->
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <p class="title">Welcome to Sports Scheduler</p>
+                <p class="subtitle">New Account - <a class="link" href="/signup">Sign-Up now...</a></p>
+                <p class="subtitle">Already have an Account? <a class="link" href="/login">Sign-In</a></p>
+            </div>
         </div>
     </div>
 </body>
